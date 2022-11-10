@@ -10,7 +10,13 @@
 
     <bean name="hospital" class="com.example.spring.springcore.list.Hospital">
         <property name="name" value="Global Hospital"/>
-        <property name="departments" value="Bone Department"/>
+        <property name="departments">
+            <list>
+                <value>Bone Department</value>
+                <value>Eye Department</value>
+                <value>Heart Department</value>
+            </list>
+        </property>
     </bean>
 
 </beans>
