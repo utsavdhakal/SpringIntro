@@ -23,7 +23,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
