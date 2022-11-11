@@ -8,15 +8,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean name="lang" class="com.example.spring.springcore.properties.CountryLanguage">
-        <property name="countryAndLanguage">
-            <props>
-                <prop key="Nepal">Nepali</prop>
-                <prop key="USA">English</prop>
-                <prop key="Switzerland">French</prop>
-                <prop key="India">Hindi</prop>
-            </props>
-        </property>
+    <bean name="scores" class="com.example.spring.springcore.ref.Scores" p:chemistry="75" p:maths="90" p:physics="81"/>
+
+    <bean name="student" class="com.example.spring.springcore.ref.Student">
+        <property name="scores" ref="scores"/>
     </bean>
 
 </beans>
