@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-        var ctx = new ClassPathXmlApplicationContext("configs/set-config.xml");
+        var ctx = new ClassPathXmlApplicationContext("configs/setter-injection/set-config.xml");
         CarDealer carDealer = ctx.getBean("carDealer", CarDealer.class);
         System.out.println(carDealer);
     }
